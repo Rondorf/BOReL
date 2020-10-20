@@ -15,7 +15,12 @@ class PointEnv(Env):
      - reward is L2 distance
     """
 
-    def __init__(self, max_episode_steps=20, n_tasks=2, modify_init_state_dist=True, on_circle_init_state=True):
+    def __init__(self,
+                 max_episode_steps=20,
+                 n_tasks=2,
+                 modify_init_state_dist=True,
+                 on_circle_init_state=True,
+                 **kwargs):
 
         self._max_episode_steps = max_episode_steps
         self.step_count = 0
@@ -87,8 +92,13 @@ class SparsePointEnv(PointEnv):
      NOTE that `step()` returns the dense reward because this is used during meta-training
      the algorithm should call `sparsify_rewards()` to get the sparse rewards
      '''
-    def __init__(self, max_episode_steps=20, n_tasks=2, goal_radius=0.2,
-                 modify_init_state_dist=True, on_circle_init_state=True):
+    def __init__(self,
+                 max_episode_steps=20,
+                 n_tasks=2,
+                 goal_radius=0.2,
+                 modify_init_state_dist=True,
+                 on_circle_init_state=True,
+                 **kwargs):
         super().__init__(max_episode_steps, n_tasks)
         self.goal_radius = goal_radius
         self.modify_init_state_dist = modify_init_state_dist

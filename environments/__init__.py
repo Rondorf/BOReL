@@ -52,13 +52,6 @@ register(
     # kwargs={'num_cells': 5, 'num_steps': 30, 'n_tasks': 2},
 )
 
-
-register(
-    'TwoRooms-v2',
-    entry_point='environments.toy_navigation.two_rooms:TwoRooms',
-    kwargs={'num_cells': 5, 'num_steps': 30, 'n_tasks': 2},
-)
-
 # # ----------- Point Robot ----------- # #
 register(
     'PointRobot-v0',
