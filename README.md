@@ -51,6 +51,16 @@ For the online training, run: ``python online_training.py --env-type X`` where X
 Configuration files are in ``online_config``. All training parameters can be set from within the files, or by passing command line arguments.  
 
 
+## Citation ##
+```
+@inproceedings{dorfman2021offline,
+  title={Offline Meta Reinforcement Learning--Identifiability Challenges and Effective Data Collection Strategies},
+  author={Dorfman, Ron and Shenfeld, Idan and Tamar, Aviv},
+  booktitle={Thirty-Fifth Conference on Neural Information Processing Systems},
+  year={2021}
+}
+```
+
 ## Communication ##
 For any questions, please contact Ron Dorfman: ``rondorfman2@gmail.com``
 
