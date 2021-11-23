@@ -1,4 +1,4 @@
-# Offline Meta Learning of Exploration
+# Offline Meta Reinforcment Learning - Identifiability Challenges and Effective Data Collection Strategies
 
 ### Requirements ### 
 All requirements are specified in ``requirements.txt``. \
